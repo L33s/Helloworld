@@ -1,0 +1,57 @@
+﻿@font-face {
+    font-family:in-line;
+    src:url('../fonts/ostrich-sans-bold.woff');
+}
+.header-title p {
+    font-family:in-line;
+    color:white;
+    font-size:5.5em;
+   
+}
+.body_ {
+    height:800px;
+    display:block;
+    position:relative;
+    background-color:rgba(225,225,255,0.8);
+}
+.main_ {
+    height:500px;
+}
+.body {
+    background: #43C6AC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #43C6AC, #191654); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #43C6AC, #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#insert_D {
+    font-family:Roboto;
+    color: #9de1d4;
+    font-size:1.2em;
+    transition-duration:0.2s;
+
+}
+#typing_D {
+    color:chartreuse;
+}
+.frame-o {
+    height:300px;
+    width:300px;
+    border:10px solid #8adbcb;
+    border-style:solid;
+    color: #8adbcb;
+    z-index:-1;
+    position:absolute;
+    border-radius:40%;
+    opacity:0.3;
+}
+.frame-o.one {
+    transition-duration:0.5s;
+}
+.frame-o.two {
+    transition-duration:1s;
+}
+.frame-o.three {
+    transition-duration:2s;
+}
+.frame-o.four {
+    transition-duration:3s;
+}
