@@ -2,56 +2,79 @@
     font-family:in-line;
     src:url('../fonts/ostrich-sans-bold.woff');
 }
+@font-face {
+    font-family:in-line;
+    font-weight:bold;
+    src:url('../fonts/ostrich-sans-black.woff');
+}
+.header-title {
+    padding-top:150px;
+}
 .header-title p {
     font-family:in-line;
     color:white;
-    font-size:5.5em;
-   
+    font-size:72px;
+    line-height:45px
 }
 .body_ {
-    height:800px;
-    display:block;
-    position:relative;
-    background-color:rgba(225,225,255,0.8);
+    padding:30px 10px 30px 10px;
+    background-color: #aeb3c6;
+    height:1200px;
 }
+.parallax-container {
+      height: 600px;
+    }
+
 .main_ {
-    height:500px;
+    height:600px;
+  
 }
 .body {
-    background: #43C6AC; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #43C6AC, #191654); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #43C6AC, #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+
+
 }
 #insert_D {
     font-family:Roboto;
-    color: #9de1d4;
+    color: #EDDE5D;
     font-size:1.2em;
     transition-duration:0.2s;
 
 }
 #typing_D {
-    color:chartreuse;
+    color:khaki;
+    font-size:50pt;
+    font-weight:bold;
 }
 .frame-o {
     height:300px;
     width:300px;
-    border:10px solid #8adbcb;
+    border:10px solid #EDDE5D;
     border-style:solid;
     color: #8adbcb;
     z-index:-1;
     position:absolute;
     border-radius:40%;
-    opacity:0.3;
-}
-.frame-o.one {
-    transition-duration:0.5s;
-}
-.frame-o.two {
-    transition-duration:1s;
-}
-.frame-o.three {
-    transition-duration:2s;
-}
-.frame-o.four {
+    opacity:0.9;
     transition-duration:3s;
+}
+
+.side-nav .userView .background{
+    background: #DAE2F8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left,#ab8584, #aeb3c6); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left,  #ab8584, #aeb3c6 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+.title :first-letter{
+    font-size:45pt;
+    font-weight:bold;
+    
+}
+.title {
+    font-size:30pt;
+    font-family:in-line;
+    color:lightseagreen;
+    letter-spacing:6px;
+    
 }
