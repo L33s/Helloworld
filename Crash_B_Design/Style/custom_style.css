@@ -7,18 +7,21 @@
     font-weight:bold;
     src:url('../fonts/ostrich-sans-black.woff');
 }
+html {
+    background-color:#aeb5c7
+}
 .header-title {
     padding-top:150px;
 }
 .header-title p {
-    font-family:in-line;
+    font-weight:300;
     color:white;
     font-size:72px;
     line-height:45px
 }
 .body_ {
     padding:30px 10px 30px 10px;
-    background-color: #aeb3c6;
+    background-color: #aeb5c7;
     height:1200px;
 }
 .parallax-container {
@@ -26,13 +29,16 @@
     }
 
 .main_ {
-    height:600px;
+    height:700px;
   
 }
-.body {
-    
-
-
+.hi_ {
+    background-color:transparent;
+    font-family:Roboto;
+    font-size:14pt;
+    font-weight:300;
+    color:white;
+    box-shadow:none;
 
 }
 #insert_D {
@@ -45,11 +51,11 @@
 #typing_D {
     color:khaki;
     font-size:50pt;
-    font-weight:bold;
+    font-weight:400;
 }
 .frame-o {
-    height:300px;
-    width:300px;
+    height:150px;
+    width:150px;
     border:10px solid #EDDE5D;
     border-style:solid;
     color: #8adbcb;
@@ -76,5 +82,11 @@
     font-family:in-line;
     color:lightseagreen;
     letter-spacing:6px;
+    
+}
+.edu_line img{
+
+    width:100%;
+
     
 }
