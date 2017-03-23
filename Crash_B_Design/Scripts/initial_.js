@@ -74,22 +74,44 @@ function moving_boxes() {
     }
     
 }
-counter = 1;
-function next_page() {
-    max_num = $(".resizeable").length;
-     counter += 1;
-    if (counter > max_num) { counter = max_num; } else {
+var counter = 1;
+var myHeight = 0;
+function next_pre_page(step) {
+    var cur_position = $(window).scrollTop()+ myHeight/2;
+    var max_num = $(".resizeable").length;
+    $(".resizeable").each(function (index) {
+        if (index + 1 != max_num) {
+            if (cur_position >= $("div.resizeable:nth-child(" + (index + 1) + ")").offset().top && cur_position <= $("div.resizeable:nth-child(" + (index + 2) + ")").offset().top) { counter = index + 1; }
+        } else {
+            if (cur_position >= $("div.resizeable:nth-child(" + (index + 1) + ")").offset().top && cur_position < $(document).height()) { counter = index + 1; }
+        }
+    })
+        counter = counter + step;
+        if (counter > max_num) { counter = max_num; $('html,body').animate({ scrollTop: $("div.resizeable:nth-child(" + counter + ")").offset().top }, 400); }
+     else if (counter <= 0) { counter = 1; }
+     else{
         $('html,body').animate({ scrollTop: $("div.resizeable:nth-child(" + counter + ")").offset().top }, 400);
-    }
+     }
+     ;
 }
 function pre_page() {
+    var cur_position = $(window).scrollTop();
+    $(".resizeable").each(function(index) {
+        if (index + 1 != $(".resizeable").length) {
+            if (cur_position >= $("div.resizeable:nth-child(" + (index + 1) + ")").offset().top && cur_position <= $("div.resizeable:nth-child(" + (index + 2) + ")").offset().top) { counter = index + 1; }
+        } else {
+            if (cur_position >= $("div.resizeable:nth-child(" + (index + 1) + ")").offset().top && cur_position <= $(document).height()) { counter = index + 1; }
+        }
+        alert($("div.resizeable:nth-child(" + (index + 1) + ")").offset().top);
+    })
+    
     counter -= 1;
     if (counter <= 0) { counter = 1; } else {
         $('html,body').animate({ scrollTop: $("div.resizeable:nth-child(" + counter + ")").offset().top }, 400);
     }
 }
 function alertSize() {
-    var myHeight = 0;
+    
     if( typeof( window.innerWidth ) == 'number' ) {
         //Non-IE
         myHeight = window.innerHeight;
