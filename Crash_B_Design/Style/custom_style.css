@@ -25,21 +25,18 @@ html {
     height:1200px;
 }
 .parallax-container {
-      height: 600px;
-    }
-
-.main_ {
-    height:700px;
-  
+    height:800px;
+   
 }
+
 .hi_ {
     background-color:transparent;
     font-family:Roboto;
-    font-size:14pt;
+    font-size:18pt;
     font-weight:300;
     color:white;
     box-shadow:none;
-
+ 
 }
 #insert_D {
     font-family:Roboto;
@@ -50,7 +47,7 @@ html {
 }
 #typing_D {
     color:khaki;
-    font-size:50pt;
+    font-size:40pt;
     font-weight:400;
 }
 .frame-o {
@@ -84,9 +81,8 @@ html {
     letter-spacing:6px;
     
 }
-.edu_line img{
-
+.exp_line img{
     width:100%;
-
-    
+}
+.resizeable {
 }

@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var i = 1;
-    var typing_tmp = 'Developer.   Creator.   Designer.';
+    var typing_tmp = 'Developer.   Programmer.   Designer.';
     var loop = true;
     function typing_D() {
         if (loop) {
