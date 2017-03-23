@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="Style/materialize.min.css" />
     <link rel="stylesheet" href="Style/font-awesome.css" />
     <link rel="stylesheet" href="Style/custom_style.css" />
-    
+
 </head>
 <body class="body">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,43 +19,49 @@
     <script src="Scripts/initial_.js"></script>
     <script src="Scripts/letter_typing.js"></script>
 
-        <ul id="slide-out" class="side-nav fixed ">
-            <li>
-                <div class="userView">
-                    <div class="background">
-                        
-                    </div>
-                    <a href="#!">
-                        <img class="circle" src="Image/J_Icon.png" /></a>
-                    <a href="#!"><span class="white-text name">John Doe</span></a>
-                    <a href="#!"><span class="white-text email">jdandturk@gmail.com</span></a>
+    <ul id="slide-out" class="side-nav fixed ">
+        <li>
+            <div class="userView">
+                <div class="background">
                 </div>
-            </li>
-            <li><a id="disply_1" href="#!">First Sidebar Link</a></li>
-            <li><a id="disply_2" href="#!">Second Sidebar Link</a></li>
-        </ul>
-    
+                <a href="#!">
+                    <img class="circle" src="Image/J_Icon.png" /></a>
+                <a href="#!"><span class="white-text name">John Doe</span></a>
+                <a href="#!"><span class="white-text email">jdandturk@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a id="disply_1" href="#!">First Sidebar Link</a></li>
+        <li><a id="disply_2" href="#!">Second Sidebar Link</a></li>
+    </ul>
+
     <div>
         <div class="row">
-            <div class="parallax-container col s12 l9 push-l3">
-                <div class="parallax">
-                    <img src="Image/Header_bg.jpg">
+            <div class="col s12 l9 push-l3">
+               
+                <div class="resizeable  parallax-container">
+                    <div class="parallax">
+                        <img src="Image/Header_bg.jpg">
+                    </div>
+                 
+                    <button id="next" class="btn-floating  waves-effect waves-light black" onclick="next_page()"><i class="fa fa-angle-double-down" aria-hidden="true"></i></button>
+                    <button id="pre" class="btn-floating  waves-effect waves-light black" onclick="pre_page()"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+               
+                    <div class="main_">
+
+                        <a href="#" data-activates="slide-out" class="button-collapse hide"><i class="fa fa-bars" aria-hidden="true" style="font-size: 2em;"></i></a>
+                        <div class="header-title center-align">
+                            <p style="margin-bottom: 0;">Hi, I'm J.Hui</p>
+                            <p class="col s12">a <span id="typing_D"></span><span id="insert_D">|</span></p>
+                        </div>
+                        <div class="frame-o one"></div>
+                        <div class="frame-o two"></div>
+                        <div class="frame-o three"></div>
+                        <div class="frame-o four"></div>
+                    </div>
                 </div>
-                 <div class="main_">
-             
-               <a href="#" data-activates="slide-out" class="button-collapse hide"><i class="fa fa-bars" aria-hidden="true" style="font-size:2em;"></i></a>
-                <div class="header-title center-align">
-                    <p style="margin-bottom:0;">Hi, I'm J.Hui</p>
-                    <p class="col s12">a <span id="typing_D"></span><span id="insert_D">|</span></p>
-                </div>
-                <div class="frame-o one"></div>
-                <div class="frame-o two"></div>
-                <div class="frame-o three"></div>
-                <div class="frame-o four"></div>
-            </div>
-            </div>
-           
-            <div class="col s12 l9 push-l3 body_ ">
+
+
+                
                 <div class="resizeable col s12">
                     <div class="card horizontal hi_">
                         <div class="card-image">
@@ -66,22 +72,18 @@
                             <p>My name is J.Hui Lee. I have a passion for programming and UI/UX design.</p>
                             <p>Scroll down to learn more about <b>ME</b>.</p>
                         </div>
-                       
+
                     </div>
-                   
+
                 </div>
 
                 <div class="exp_line resizeable  col s12">
-                        <img src="Image/exp_timeline.png">
-                    
+                    <img src="Image/Exp_Timeline.png">
                 </div>
-                 <div class="exp_line resizeable col s12">
-                        <img src="Image/Skill.png">
-                    
+                <div class="exp_line resizeable col s12">
+                    <img src="Image/Skill.png">
                 </div>
             </div>
-            
-          
         </div>
      
     </div>

@@ -25,10 +25,11 @@ html {
     height:1200px;
 }
 .parallax-container {
-    height:800px;
-   
+   height:800px;
 }
-
+.row .col {
+    padding:0px;
+}
 .hi_ {
     background-color:transparent;
     font-family:Roboto;
@@ -83,6 +84,24 @@ html {
 }
 .exp_line img{
     width:100%;
+    min-width:800px;
 }
 .resizeable {
+    
+}
+
+
+#pre {
+    position:fixed;
+    margin:20px;
+    top:0px;
+    right:0px;
+    opacity:0.5;
+}
+#next {
+    position:fixed;
+    margin:20px;
+    bottom:0px;
+    right:0px;
+    opacity:0.5;
 }
