@@ -1,0 +1,149 @@
+﻿@font-face {
+    font-family:in-line;
+    src:url('../fonts/ostrich-sans-bold.woff');
+}
+@font-face {
+    font-family:in-line;
+    font-weight:bold;
+    src:url('../fonts/ostrich-sans-black.woff');
+}
+html {
+    background-color:#1f1f1f;
+}
+.header-title {
+    padding-top:150px;
+}
+.header-title p {
+    font-weight:300;
+    color:white;
+    font-size:72px;
+    line-height:45px
+}
+.body_ {
+    padding:30px 10px 30px 10px;
+    background-color: #aeb5c7;
+    height:1200px;
+}
+.parallax-container {
+   height:800px;
+}
+.row .col {
+    padding:0px;
+}
+.hi_ {
+    background-color:transparent;
+    font-family:Roboto;
+    font-size:18pt;
+    font-weight:300;
+    color:white;
+    box-shadow:none;
+ 
+}
+#insert_D {
+    font-family:Roboto;
+    color: #EDDE5D;
+    font-size:1.2em;
+    transition-duration:0.2s;
+
+}
+#typing_D {
+    color:khaki;
+    font-size:40pt;
+    font-weight:400;
+}
+.frame-o {
+    height:150px;
+    width:150px;
+    border:10px solid #EDDE5D;
+    border-style:solid;
+    color: #8adbcb;
+    z-index:-1;
+    position:absolute;
+    border-radius:40%;
+    opacity:0.9;
+    transition-duration:3s;
+}
+.side-nav a {
+    color:#a8a8a8;
+    
+}
+.side-nav {
+    background-color:#004030;
+}
+.side-nav .userView .background{
+    background: #DAE2F8;
+    background: -webkit-linear-gradient(to left,#008662, #1f1f1f);
+    background: linear-gradient(to left,  #008662, #1f1f1f );
+        
+}
+.title :first-letter{
+    font-size:45pt;
+    font-weight:bold;
+    
+}
+.title {
+    font-size:30pt;
+    font-family:in-line;
+    color:lightseagreen;
+    letter-spacing:6px;
+    
+}
+.exp_line img{
+    width:100%;
+    max-width:1280px;
+    min-width:800px;
+}
+.resizeable {
+    min-width:800px
+}
+
+
+#pre{
+    position:fixed;
+    margin:20px;
+    top:0px;
+    right:0px;
+    opacity:0.7;
+   
+}
+#next img {
+   transform:translate(-10px,50px);
+   width:80%;
+   height:80%;
+  
+}
+#pre img {
+   transform:translate(-10px, -30px);
+   float:left;
+   width:80%;
+   height:80%;
+}
+#next button, #pre button {
+   background-color:black;
+}
+#next {
+    position:fixed;
+    margin:20px;
+    bottom:0px;
+    right:0px;
+    opacity:0.7;
+ 
+}
+.side-nav .userView {
+    margin-bottom:0px;
+}
+
+.table-of-contents a.active {
+    border-left:8px solid #00a87c;
+    border-right:none;
+    background-color:rgba(255,255,255,0.1);
+    transition-duration:0.4s;
+    padding-left:40px;
+    color:white;
+}
+.table-of-contents a:hover {
+     border-left:5px solid #008662;
+}
+#ME>ul>li>a{
+    margin-left:30px;
+}
