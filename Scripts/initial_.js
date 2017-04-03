@@ -43,10 +43,10 @@ function random_moving_boxes() {
     });
 
 }
-//var t_point = [0.8,0.0,0.0,0.8];
-//var l_point = [0.1, 0.1, 0.8, 0.8]; //4 angle
-var t_point = [0.8, 0.0, 0.8, 0.0];
-var l_point = [0.1, 0.1, 0.8, 0.8];
+var t_point = [0.8,0.0,0.0,0.8];
+var l_point = [0.1, 0.1, 0.8, 0.8]; //4 angle
+//var t_point = [0.8, 0.0, 0.8, 0.0];
+//var l_point = [0.1, 0.1, 0.8, 0.8];
 var active_ = true;
 function moving_boxes() {
     if (active_) {
@@ -115,6 +115,7 @@ function alertSize() {
         myHeight = document.body.clientHeight;
     }
     $(".resizeable").each(function (index) {
+           
         if (index != 0) {
             var cur_height = $(this).height();
             var pad = myHeight - cur_height;
@@ -125,6 +126,11 @@ function alertSize() {
         } else {
             $(this).css({
                 "height": myHeight + "px"
+            })
+            var cur_height = $(".header-title").height();
+            var pad = myHeight - cur_height;
+            $(".header-title").css({
+                "padding-top": pad*0.4 +"px"
             })
         }
     })

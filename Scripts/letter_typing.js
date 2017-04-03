@@ -1,6 +1,7 @@
 ﻿$(document).ready(function () {
     var i = 1;
     var typing_tmp = 'Developer.   Programmer.   Designer.';
+    //var typing_tmp = 'I'+"'"+'ve a passion for programming and UI/UX design.';
     var loop = true;
     function typing_D() {
         if (loop) {

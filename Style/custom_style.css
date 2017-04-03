@@ -16,7 +16,7 @@ html {
 .header-title p {
     font-weight:300;
     color:white;
-    font-size:72px;
+    font-size:40px;
     line-height:45px
 }
 .body_ {
@@ -33,7 +33,7 @@ html {
 .hi_ {
     background-color:transparent;
     font-family:Roboto;
-    font-size:18pt;
+  
     font-weight:300;
     color:white;
     box-shadow:none;
@@ -47,14 +47,14 @@ html {
 
 }
 #typing_D {
-    color:khaki;
-    font-size:40pt;
+    color:#1ef6bd;
+    font-size:32pt;
     font-weight:400;
 }
 .frame-o {
     height:150px;
     width:150px;
-    border:10px solid #EDDE5D;
+    border:10px solid #00503b;
     border-style:solid;
     color: #8adbcb;
     z-index:-1;
@@ -68,12 +68,13 @@ html {
     
 }
 .side-nav {
-    background-color:#004030;
+    background:  #2f2f2f;
+    border-left:1px solid #0f0f0f;
 }
 .side-nav .userView .background{
-    background: #DAE2F8;
-    background: -webkit-linear-gradient(to left,#008662, #1f1f1f);
-    background: linear-gradient(to left,  #008662, #1f1f1f );
+      background:  #008662;
+    background: -webkit-linear-gradient( #008662 ,#2f2f2f);
+    background: linear-gradient( #008662 ,#2f2f2f);
         
 }
 .title :first-letter{
@@ -135,13 +136,14 @@ html {
 .table-of-contents a.active {
     border-left:8px solid #00a87c;
     border-right:none;
-    background-color:rgba(255,255,255,0.1);
+    background-color:rgba(0,0,0,0.1);
     transition-duration:0.4s;
     padding-left:40px;
     color:white;
 }
 .table-of-contents a:hover {
      border-left:5px solid #008662;
+     background-color:rgba(39,39,39,0.1);
 }
 #ME>ul>li>a{
     margin-left:30px;
