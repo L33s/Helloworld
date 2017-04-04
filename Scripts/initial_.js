@@ -90,9 +90,9 @@ function next_pre_page(step) {
         }
     })
     counter = counter + step;
-    if (counter >= max_num) { $('#next img').hide(); }
-    else if (counter <= 1) { $('#pre img').hide(); }
-    else { $('#next img').show(); $('#pre img').show(); }
+    if (counter >= max_num) { $('#next img').fadeOut(1000); }
+    else if (counter <= 1) { $('#pre img').fadeOut(1000); }
+    else { $('#next img').fadeIn(1000); $('#pre img').fadeIn(1000); }
         if (counter > max_num) { counter = max_num; $('html,body').animate({ scrollTop: $("div.resizeable:nth-child(" + counter + ")").offset().top }, 400); }
         else if (counter <= 0) { counter = 1; }
      else{
@@ -138,4 +138,19 @@ function alertSize() {
 }
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
+}
+function form() {
+    if (!$('#name').val()) { Materialize.toast('Hi, may i know your name? ', 3000, 'rounded') }
+    else if (!$('#email').val()) { Materialize.toast('Try after put in your email address :)', 3000, 'rounded') }
+    else if ($('#email').hasClass("invalid")) { Materialize.toast('Opps~ incorrect e-mail detected :O', 3000, 'rounded') }
+    else if (!$('#Message').val()) { Materialize.toast('Any feedback or message are appreciated. ^_^', 3000, 'rounded') }
+        else{
+        event.preventDefault();
+        var person = $("#name").val() + ' (' + $("#email").val() + ')';
+        var email = 'jianhui0614@gmail.com';
+        var subject = '(Personal Website) Message From ' + person;
+        var emailBody = person + ' said : %0D%0A' + $('#Message').val().replace('\n', '%0D%0A');
+        if ($("#Resume").is(":checked")) { emailBody += '%0D%0A !--------------------Requsting Resume-------------------!'}
+        window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
+    }
 }

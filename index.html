@@ -34,6 +34,7 @@
                     <ul>
                         <li><a href="#ME_Timeline">.Timeline</a></li>
                         <li><a href="#ME_Skill">.Skill</a></li>
+                        <li><a href="#ME_Contact">.Contact</a></li>
                     </ul>
                 </li>
                 
@@ -72,7 +73,7 @@
                         <div class="card-content">
                             <span class="card-title">Hello !</span>
                             <p style="text-align:justify">My name's J.Hui Lee, currently living in Petaling Jaya, Malaysia. I've been in business since 2016 and work mainly with web development and design. I have a passion for programming and UI/UX design.</p><br />
-                              <p style="text-align:justify"> While I speciailze in software enginerring, I now also do a lot of work in web forms and resposive development. 
+                              <p style="text-align:justify"> While I speciailze in software enginerring, I now also do a lot of work in web forms and responsive development. 
                             Feel free to view my resume. If I sound fit for your position, don't hesitate to contact me !</p><br />
                             <p>Scroll down to learn more about <b>ME</b>.</p>
                         </div>
@@ -84,6 +85,46 @@
                 <div id="ME_Skill" class="scrollspy exp_line resizeable col s12">
                     <img src="Image/Skill.png">
                 </div>
+                <div id="ME_Contact" class="scrollspy exp_line resizeable col s12  ">
+                    <h3 class="center" style="font-weight:100;color:white"><b>ME</b>.CONTACT</h3>
+                    <!--<div id="contact" class="container">
+                        <div class="card small">
+                            
+                                <span class="card-title">Card Title</span>
+                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons" onclick="form()">add</i></a>
+                           
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>-->
+                    <form id="form" class="col s12">
+                        <div class="input-field  container ">
+                            <i class="fa fa-user-o material-icons prefix" aria-hidden="true"></i>
+                            <input id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field container ">
+                            <i class="fa fa-envelope-o material-icons prefix" aria-hidden="true"></i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field container ">
+                            <i class="fa fa-commenting-o material-icons prefix" aria-hidden="true"></i>
+                            <textarea id="Message" type="text" class="materialize-textarea validate"></textarea>
+                            <label for="Message">Message</label>
+                            
+                        </div>
+                        <div class="input-field container ">
+                            <input type="checkbox" id="Resume"/>
+                            <label for="Resume">Request for Resume</label>
+                            <a class="waves-effect waves-light btn right" onclick="form()"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                        </div>
+                       
+                    </form>
+
+
+                 </div>
             </div>
         </div>
 

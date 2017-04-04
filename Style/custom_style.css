@@ -41,7 +41,7 @@ html {
 }
 #insert_D {
     font-family:Roboto;
-    color: #EDDE5D;
+    color: #1ef6bd;
     font-size:1.2em;
     transition-duration:0.2s;
 
@@ -147,4 +147,31 @@ html {
 }
 #ME>ul>li>a{
     margin-left:30px;
+}
+.btn {
+    background-color:#008662;
+}
+    .btn:hover {
+        background-color: #00a682;
+    }
+#form {
+    
+}
+.input-field {
+    color:#9e9e9e;
+}
+input:not([type]).valid, input:not([type]).valid:focus, 
+input[type=text].valid, input[type=text].valid:focus, 
+input[type=password].valid, input[type=password].valid:focus, 
+input[type=email].valid, input[type=email].valid:focus, 
+input[type=url].valid, input[type=url].valid:focus, input[type=time].valid, 
+input[type=time].valid:focus, input[type=date].valid, 
+input[type=date].valid:focus, input[type=datetime].valid, 
+input[type=datetime].valid:focus, input[type=datetime-local].valid, 
+input[type=datetime-local].valid:focus, input[type=tel].valid, 
+input[type=tel].valid:focus, input[type=number].valid, 
+input[type=number].valid:focus, input[type=search].valid, 
+input[type=search].valid:focus, textarea.valid.materialize-textarea, 
+textarea.valid.materialize-textarea:focus {
+    border-bottom:1px solid #9e9e9e;
 }
